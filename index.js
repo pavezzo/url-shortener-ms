@@ -44,7 +44,7 @@ app.get('/new/:urlReq*', function(req, res) {
 
         res.json({
             original_url: urlReq,
-            short_url: fullUrl
+            short_url: "https://" + fullUrl
         })
     } else {
         res.json({
