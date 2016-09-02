@@ -64,4 +64,6 @@ app.get('/:num', function(req, res) {
     });
 })
 
-app.listen(process.env.PORT || 8000);
+const PORT = process.env.PORT || 8000;
+
+app.listen(PORT);
